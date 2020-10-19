@@ -98,7 +98,9 @@ input, select {
 /* END OF RESET */
 
 
-
+.wrapper {
+    width: 100%;
+}
 
 .nav {
 display: flex;
@@ -314,9 +316,70 @@ z-index: 999;
 
 .icon {
     background-color: gainsboro;
-    font-size: 24px;
-    border-radius: 100px;
-    padding: 24px;
+    border-radius: 100%;
+    padding: 10px;
     margin-left: 10px;
     margin-right: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.related-content {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+    display: inline-block;
+    margin-top: 30px;
+}
+
+.sidebar {
+    float: right;
+    width: 30%;
+}
+.sidebar ul li {
+    margin: 0px 5% 0px 5%;
+    padding: 20px 10px 20px 0px;
+    list-style-type: none;
+    border-bottom: 1px solid gainsboro;
+    line-height: 1.2;
+}
+
+#most-popular {
+    font-weight: bold;
+}
+
+.related-grid {
+    display: grid;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding-top: 20px;
+    grid-template-rows: 20px 135px 135px 135px 135px;
+    grid-template-columns: 200px 200px 200px;
+    grid-gap: 15px;
+}
+.related-header {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    grid-row-start: 1;
+    grid-column-start: 1;
+    grid-column-end: -1;
+}
+.related-grid img {
+    max-width: 200px;
+}
+.related-grid p {
+    max-width: 200px;
+    max-height: 300px;
+    justify-content: start;
+    line-height: 1.4;
+    font-size: 18px;
+    font-weight: 525;
+}
+.related-grid .date {
+    color: gray;
+    font-weight: normal;
+    font-size: 12px;
 }
